@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+    <script>
+    function generatePDF() {
+      var doc = new jsPDF();
+      doc.text('Hello world!', 10, 10);
+      doc.save('mydocument.pdf');
+    }
+    </script>
+</head>
+<body>
+    <button onclick="generatePDF()">Generate PDF</button>
+</body>
+</html>
